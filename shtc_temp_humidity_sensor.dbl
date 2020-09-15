@@ -4659,11 +4659,17 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U1" library="SHTC3" deviceset="SHTC3" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="73.406" y="105.41" size="1.143" layer="97">C1 needs to be as close
+as possible to the sensor</text>
+<text x="72.898" y="125.476" size="1.143" layer="97">Any copper in the immediate proximity 
+of the sensor which is not needed
+must to be removed (including 
+ground pours and traces)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="81.28" y="116.84" smashed="yes">
@@ -4676,7 +4682,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY3" gate="G$1" x="68.58" y="124.46" smashed="yes">
 <attribute name="VALUE" x="68.58" y="127.254" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C2" gate="G$1" x="60.96" y="119.38" smashed="yes">
+<instance part="C1" gate="G$1" x="60.96" y="119.38" smashed="yes">
 <attribute name="NAME" x="61.976" y="120.015" size="1.778" layer="95"/>
 <attribute name="VALUE" x="61.976" y="115.189" size="1.778" layer="96"/>
 </instance>
@@ -4690,7 +4696,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="71.12" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="114.3" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="68.58" y="114.3"/>
 </segment>
@@ -4701,7 +4707,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="71.12" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="119.38" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="121.92" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 <junction x="68.58" y="121.92"/>
@@ -6209,7 +6215,7 @@ design rules under a new name.</description>
 <element name="U1" library="SHTC3" package="SHTC3" value="SHTC3" x="-8.011159375" y="1.49098125" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-7.93665625" y="3.4383" size="1.016" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="-7.942578125" y="-1.25221875" smashed="yes" rot="R180">
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF" x="-7.942578125" y="-1.25221875" smashed="yes" rot="R180">
 <attribute name="NAME" x="-10.59941875" y="-1.2319" size="1.016" layer="25" ratio="12" rot="R270" align="center"/>
 <attribute name="POPULARITY" value="63" x="-7.942578125" y="-1.25221875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-7.942578125" y="-1.25221875" size="1.778" layer="27" rot="R180" display="off"/>
@@ -6219,7 +6225,7 @@ design rules under a new name.</description>
 <signal name="GND">
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="5"/>
-<contactref element="C2" pad="2"/>
+<contactref element="C1" pad="2"/>
 <wire x1="-8.936159375" y1="0.99098125" x2="-8.936159375" y2="-1.2086375" width="0.2032" layer="1"/>
 <wire x1="-8.936159375" y1="-1.2086375" x2="-8.892578125" y2="-1.25221875" width="0.2032" layer="1"/>
 <wire x1="-8.011159375" y1="1.49098125" x2="-8.011159375" y2="1.008384375" width="0.2032" layer="1"/>
@@ -6228,7 +6234,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="3.3V">
 <contactref element="U1" pad="1"/>
-<contactref element="C2" pad="1"/>
+<contactref element="C1" pad="1"/>
 <wire x1="-7.086159375" y1="0.99098125" x2="-7.086159375" y2="-1.1586375" width="0.2032" layer="1"/>
 <wire x1="-7.086159375" y1="-1.1586375" x2="-6.992578125" y2="-1.25221875" width="0.2032" layer="1"/>
 </signal>

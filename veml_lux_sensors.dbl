@@ -5,7 +5,7 @@
 <description>A combination VEML7700 / VEML6030 block for most Lux Sensor needs. The footprints are on top of each other and 0805 surface mount passives are used in a compact design.</description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="532 x 576 mil"/>
+<attribute name="BOARDSIZE" value="579 x 576 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -5153,6 +5153,12 @@ Device Model created 15.06.2016 by Johannes Kolb - Vishay Semiconductor GmbH</de
 <sheet>
 <plain>
 <text x="-29.718" y="73.914" size="1.778" layer="96" rot="R90">10R</text>
+<text x="-33.02" y="109.22" size="1.143" layer="97">First (left) microphone should be connected to GND
+Second (right) microphone should be connected to 3.3V</text>
+<text x="-27.686" y="56.642" size="1.143" layer="97">C1 and C2 need to be placed as close as possible to the mic
+C1 should be the closest</text>
+<text x="-18.034" y="62.23" size="1.143" layer="97">Pull-up resistors for SDA and SCL are 
+included in the microcontroller design block</text>
 </plain>
 <instances>
 <instance part="VEML7700" gate="G$1" x="-15.24" y="101.6" smashed="yes">
