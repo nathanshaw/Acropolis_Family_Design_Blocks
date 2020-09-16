@@ -5,7 +5,7 @@
 <description>Design block containing all switch user control options for the hyper-soundwalk framework</description>
 <attributes>
 <attribute name="AIRWIRES" value="YES"/>
-<attribute name="BOARDSIZE" value="4116 x 1315 mil"/>
+<attribute name="BOARDSIZE" value="4116 x 1659 mil"/>
 <attribute name="LAYERS" value="1: 1"/>
 </attributes>
 <drawings>
@@ -6507,12 +6507,12 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -6537,7 +6537,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -6672,6 +6672,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-47.3456" y="-4.2672" size="1.778" layer="25" font="vector" ratio="12" rot="R90">Off-On</text>
 <text x="-45.3136" y="-7.7216" size="1.778" layer="25">1</text>
 <text x="-22.9616" y="-7.7216" size="1.778" layer="25">10</text>
+<dimension x1="-46.736" y1="4.4704" x2="-19.7104" y2="4.4704" x3="-33.2232" y3="5.4864" textsize="1.778" layer="20"/>
+<dimension x1="-46.5328" y1="-26.2128" x2="-14.8336" y2="-26.2128" x3="-30.6832" y3="-29.0576" textsize="1.778" layer="20"/>
+<dimension x1="-4.064" y1="-26.0096" x2="54.2544" y2="-26.0096" x3="25.0952" y3="-30.6832" textsize="1.778" layer="20"/>
+<dimension x1="4.2672" y1="4.2672" x2="50.5968" y2="4.2672" x3="27.432" y3="6.2992" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="special" urn="urn:adsk.eagle:library:367">
@@ -8513,7 +8517,6 @@ design rules under a new name.</description>
 <contactref element="PWRSW_05" pad="P$3"/>
 <contactref element="PWRSW_10" pad="P$3"/>
 <contactref element="PWRSW_09" pad="P$3"/>
-<wire x1="48.3616" y1="-2" x2="6.2992" y2="-2" width="0.762" layer="1"/>
 <wire x1="-38.8112" y1="-24.892" x2="-42.0624" y2="-24.892" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.56" y1="-24.892" x2="-38.8112" y2="-24.892" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.3088" y1="-24.892" x2="-35.56" y2="-24.892" width="0" layer="19" extent="1-1"/>
@@ -8534,13 +8537,14 @@ design rules under a new name.</description>
 <wire x1="50.866" y1="-18.288" x2="44.9732" y2="-18.288" width="0" layer="19" extent="1-1"/>
 <wire x1="39.0144" y1="-2" x2="38.8772" y2="-18.288" width="0" layer="19" extent="1-1"/>
 <wire x1="43.688" y1="-2" x2="39.0144" y2="-2" width="0" layer="19" extent="1-1"/>
+<wire x1="48.3616" y1="-2" x2="43.688" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="34.3408" y1="-2" x2="39.0144" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="29.6672" y1="-2" x2="34.3408" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="24.9936" y1="-2" x2="29.6672" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="-2" x2="24.9936" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="15.6464" y1="-2" x2="20.32" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="10.9728" y1="-2" x2="15.6464" y2="-2" width="0" layer="19" extent="1-1"/>
-<wire x1="48.3616" y1="-2" x2="43.688" y2="-2" width="0" layer="19" extent="1-1"/>
+<wire x1="6.2992" y1="-2" x2="10.9728" y2="-2" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.7297" y1="-1.6731" x2="-22.5552" y2="-24.892" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.3713" y1="-1.6096" x2="-21.8559" y2="-1.5469" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.9367" y1="-1.5969" x2="-24.3713" y2="-1.6096" width="0" layer="19" extent="1-1"/>
